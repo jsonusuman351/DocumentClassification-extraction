@@ -1,0 +1,15 @@
+
+flask
+tensorflow
+opencv-python-headless
+easyocr
+numpy
+Pillow
+pandas
+scikit-learn
+spacy
+sqlalchemy
+python-dotenv
+ 
+
+
