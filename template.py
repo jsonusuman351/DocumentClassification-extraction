@@ -7,6 +7,7 @@ logging.basicConfig(level=logging.INFO)
 project_name = "DocumentClassification_extraction"
 
 list_of_files = [
+    # src structure
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/components/data_ingestion.py",
@@ -21,9 +22,13 @@ list_of_files = [
     f"src/{project_name}/utils.py",
     "main.py",
     "app.py",
-    "Dockerfile",
     "requirements.txt",
-    "setup.py"
+    "setup.py",
+    # DATA folders (with .gitkeep to ensure folder creation)
+    "data/invoices/.gitkeep",
+    "data/id_cards/.gitkeep",
+    "data/certificates/.gitkeep",
+    "data/resumes/.gitkeep"
 ]
 
 for filepath in list_of_files:
@@ -40,3 +45,7 @@ for filepath in list_of_files:
         logging.info(f"Creating empty file: {filepath}")
     else:
         logging.info(f"{filename} already exists")
+        if os.path.getsize(filepath) == 0:
+            logging.info(f"File {filename} is empty, skipping creation.")
+        else:
+            logging.info(f"File {filename} already exists and is not empty, skipping creation.")    
