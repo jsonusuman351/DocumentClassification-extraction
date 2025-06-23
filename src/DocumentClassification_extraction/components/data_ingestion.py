@@ -1,14 +1,3 @@
-
-print("Script starting...")
-try:
-    import tensorflow as tf
-    print("TensorFlow imported successfully")
-except ImportError as e:
-    print(f"TensorFlow import error: {e}")
-
-
-
-
 import tensorflow as tf
 import os
 import logging
