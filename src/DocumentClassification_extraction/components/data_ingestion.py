@@ -89,3 +89,6 @@ class DataIngestion:
 if __name__ == "__main__":
     obj = DataIngestion()
     train_dataset, val_dataset, classes = obj.initiate_data_ingestion()
+    print(f"Train dataset: {train_dataset}")
+    print(f"Validation dataset: {val_dataset}")
+    print(f"Classes: {classes}")    

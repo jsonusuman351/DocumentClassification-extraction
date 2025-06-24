@@ -36,6 +36,7 @@ list_of_files = [
     "utils/__init__.py",
     "utils/preprocessing.py",
     "utils/image_utils.py",
+    "create_labels_csv.py",
     
     # Data directories
     "data/invoices/.gitkeep",
