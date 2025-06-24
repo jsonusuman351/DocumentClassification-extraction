@@ -9,7 +9,7 @@ from model.field_extraction import extract_fields
 
 app = Flask(__name__)
 
-# Model और label encoder load करें (startup पर)
+# Load the pre-trained model and label encoder
 model = tf.keras.models.load_model('model/classifier_model.h5')
 label_encoder = joblib.load('model/label_encoder.pkl')
 

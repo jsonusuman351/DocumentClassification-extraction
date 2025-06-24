@@ -6,6 +6,9 @@ import joblib
 from utils.preprocessing import preprocess_image
 from ocr.ocr_engine import extract_text
 from model.field_extraction import extract_fields
+from utils.logger import init_db
+from utils.logger import log_prediction
+
 
 def predict_document(image_path):
     # Load the pre-trained model and label encoder
@@ -31,8 +34,16 @@ def predict_document(image_path):
     }
 
 if __name__ == "__main__":
+    init_db()
     
     test_image = "data/id_cards/idcrd1 (1).jpg"
     result = predict_document(test_image)
+    # Log the prediction
+    log_prediction(
+        filename=os.path.basename(test_image),
+        predicted_type=result["document_type"],
+        extracted_fields=result["extracted_fields"]
+    )
+
     print("Prediction Result:")
     print(result)
