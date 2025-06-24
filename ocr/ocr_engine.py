@@ -1,17 +1,13 @@
-import easyocr
 import pytesseract
-from PIL import Image
-import io
+import cv2
 
-class OCREngine:
-    def __init__(self):
-        self.easyocr_reader = easyocr.Reader(['en'])
-    
-    def extract_text_easyocr(self, image_path):
-        result = self.easyocr_reader.readtext(image_path, detail=0)
-        return " ".join(result)
-    
-    def extract_text_tesseract(self, image_path):
-        image = Image.open(image_path)
-        text = pytesseract.image_to_string(image)
-        return text
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+def extract_text(image_path):
+    img = cv2.imread(image_path)
+    if img is None:
+        raise FileNotFoundError(f"Image not found: {image_path}")
+    text = pytesseract.image_to_string(img)
+    return text
+
+
