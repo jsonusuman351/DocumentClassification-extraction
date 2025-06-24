@@ -195,3 +195,4 @@ cython_debug/
 # Ignore trained model files
 model/classifier_model.h5
 
+"model/classifier_model.h5" 
