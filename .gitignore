@@ -196,3 +196,5 @@ cython_debug/
 model/classifier_model.h5
 
 "model/classifier_model.h5" 
+model/*.h5
+
