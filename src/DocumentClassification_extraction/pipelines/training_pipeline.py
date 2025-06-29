@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import joblib
 
 from src.DocumentClassification_extraction.components.model_trainer import build_model
-from utils.preprocessing import preprocess_image   # <-- यही सही है आपके structure के लिए
+from utils.preprocessing import preprocess_image   
 
 # Step 1: Data Load
 labels_file = os.path.join("data", "labels.csv")
