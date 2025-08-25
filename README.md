@@ -23,6 +23,7 @@ The entire workflow is served via a Flask API, and every prediction is logged in
 
 Here is a sample response from the prediction API when an ID card image is sent:
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bc57b38b-c5d3-4a84-ab29-b8f184aa28ad" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6bf9847-ff4e-4d11-80fd-0dc40dbf9f6e" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3cd87e06-a8f2-4e1c-b655-b5d9362470fd" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/29a1eda7-6b6b-46fb-9e93-f6b110247176" />
@@ -33,6 +34,7 @@ Here is a sample response from the prediction API when an ID card image is sent:
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c92c4682-0bf4-49e1-bb9d-beccc3a43522" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e58abbfd-1940-4906-823a-a6ad21064377" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f1a933ff-383d-4fe6-9251-ef779357588b" />
+
 
 ---
 
