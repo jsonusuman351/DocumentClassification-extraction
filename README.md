@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn) ![Transformers](https://img.shields.io/badge/Transformers-FFD61E?style=for-the-badge&logo=huggingface) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv) ![Pillow](https://img.shields.io/badge/Pillow-90C030?style=for-the-badge&logo=pillow) ![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy) ![EasyOCR](https://img.shields.io/badge/EasyOCR-BC1A42?style=for-the-badge) ![Joblib](https://img.shields.io/badge/Joblib-2D2D2D?style=for-the-badge)
 
-This is an end-to-end Machine Learning project that automatically classifies documents from images and extracts key information. The system can identify document types like **Certificates, ID Cards, Invoices, and Resumes**, and then pull relevant text fields using OCR and Regex.
+This is an end-to-end DL(CNN) project that automatically classifies documents from images and extracts key information. The system can identify document types like **Certificates, ID Cards, Invoices, and Resumes**, and then pull relevant text fields using OCR and Regex.
 
 The entire workflow is served via a Flask API, and every prediction is logged into a SQLite database for tracking.
 
@@ -23,8 +23,16 @@ The entire workflow is served via a Flask API, and every prediction is logged in
 
 Here is a sample response from the prediction API when an ID card image is sent:
 
-![Screenshot of the project's API JSON response]
-*(Pro Tip: You can take a screenshot of Postman or a terminal showing the API's JSON output and add it here to make your repository look more impressive.)*
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6bf9847-ff4e-4d11-80fd-0dc40dbf9f6e" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3cd87e06-a8f2-4e1c-b655-b5d9362470fd" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/29a1eda7-6b6b-46fb-9e93-f6b110247176" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/973b04af-034f-4217-85a8-4cc234f06815" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c3c6f181-7595-4746-b651-dc22ce917383" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/42048893-bb04-4bf9-bf90-73eb37d3250a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/80479098-c255-44f9-b2f2-55bf13c9ed4e" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c92c4682-0bf4-49e1-bb9d-beccc3a43522" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e58abbfd-1940-4906-823a-a6ad21064377" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f1a933ff-383d-4fe6-9251-ef779357588b" />
 
 ---
 
@@ -182,8 +190,5 @@ DOCUMENTCLASSIFICATION&EXTRACTION/
 
 ---
 
-### 📄 License
-
-This project is licensed under the MIT License.
 
 ---
