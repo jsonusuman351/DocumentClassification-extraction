@@ -19,7 +19,7 @@ def predict_document(image_path):
     img = preprocess_image(image_path)
     img = np.expand_dims(img, axis=0)  # (1, 224, 224, 3)
 
-    # Prediction
+    ## Prediction
     pred = model.predict(img)
     doc_type = label_encoder.inverse_transform([np.argmax(pred)])[0]
 
